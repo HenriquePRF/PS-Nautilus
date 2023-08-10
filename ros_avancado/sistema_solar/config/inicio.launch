@@ -1,0 +1,4 @@
+<launch>
+    <rosparam file="$(find sistema_solar)/config/parametros.yaml" command="load"/>
+    <node name="sistema_solar_sim" pkg="sistema_solar" type="sistema_solar.py" output="screen"/>
+</launch>
